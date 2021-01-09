@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-app.use(express.static(__dirname + '/dist/primeng-master'));
+app.use(express.static(__dirname + '/dist/primeng'));
 app.get('/*', function(req,res) {
 res.sendFile(path.join(__dirname+
-'/dist/primeng-master/index.html'));});
+'/dist/primeng/index.html'));});
 app.listen(process.env.PORT || 8080);
